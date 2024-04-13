@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    "use strict";
+    // let a = 34
+    let a = 'this is me'
+    console.log(a);
+    // Number
+    // Object
+    // Boolean true or false
+    // String
+    // undefined
+    // null
+    function hello() {
+        console.log("kaise ho sahil");
+    }
+    let obja = {
+        r: 34,
+        m: 64,
+        func: function myfunc(number) {
+            console.log("The number is " + number);
+        }
+
+    }
+    document.addEventListener("click", function click() {
+        console.log("clicked");
+        // alert("hello")
+        let conf = confirm("Are you sure?")
+        console.log(conf);
+    })
+    let arr = [34, 21, 23];
+    console.log(this);
+    // function myfunc(number) {
+    //     console.log("The number is " + this);
+    // }
+    let mobj = {
+        a: this,
+        myfunc: function (number) {
+            console.log(this);
+        }
+    }
+    mobj.myfunc();
+    console.log(mobj.a);
+    setTimeout(() => {
+        console.log("sahil babu");
+    }, 3000);
+    console.log("mai neeche wali script hoon understand");
+</script>
+
+<body>
+    <h1>
+        I am a learning js
+    </h1>
+
+</body>
+
+</html>
